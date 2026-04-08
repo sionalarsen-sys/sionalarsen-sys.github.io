@@ -14,7 +14,7 @@ She continued on to say something about how she was pretty sure we could make so
 
 ***
 
-I ended 2025 on a poor note and the beginning part of my 2026 did not fare much better. I got laid off from my job just before getting surgery that required 8 weeks to recover from. In the middle of that recovery, I started my Winter Quarter at North Seattle College to learn Linux and begin my journey into tech and cybersecurity \- a role that I never imagined for myself before. Even as I write this post, my unemployment benefits haven't been improved while I anxiously wait to see if my Training Benefits application is good enough. I recently became single and now have to plan to move in August. I had a bad reaction to some new medication and then suffered withdrawals just as I was working on final projects for my Winter Quarter.
+I ended 2025 on a poor note and the beginning part of my 2026 did not fare much better. I got laid off from my job just before getting surgery that required 8 weeks to recover from. In the middle of that recovery, I started my Winter Quarter at North Seattle College to learn Linux and begin my journey into tech and cybersecurity \- a role that I never imagined for myself before. Even as I write this post, my unemployment benefits haven't been improved while I anxiously wait to see if my Training Benefits application is good enough. I recently became single and now have to plan to move in August. My grandmother passed away. I had a bad reaction to some new medication and then suffered withdrawals just as I was working on final projects for my Winter Quarter.
 
 Whichever combination of stars and planets is out to get Taureses this year, can you let me know what we can do to turn things around?
 
