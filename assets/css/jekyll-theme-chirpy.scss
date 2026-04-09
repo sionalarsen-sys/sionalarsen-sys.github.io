@@ -166,3 +166,58 @@ body {
     color: #ff71ce !important;
   }
 }
+/* === FIX NAV BULLETS === */
+#sidebar ul,
+#sidebar ul.nav,
+#sidebar li,
+#sidebar li.nav-item {
+  list-style: none !important;
+  list-style-type: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#sidebar li::before,
+#sidebar li::marker {
+  display: none !important;
+  content: none !important;
+}
+
+/* === FIX AVATAR SQUARE === */
+#sidebar .profile-wrapper,
+#sidebar .profile-wrapper a,
+.profile-wrapper {
+  display: block;
+  text-align: left;
+}
+
+#sidebar img.rounded-circle,
+#sidebar .profile-wrapper img,
+.profile-wrapper img,
+img.rounded-circle {
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  /* Chirpy sometimes uses these too: */
+  -webkit-border-radius: 50% !important;
+  clip-path: none !important;
+}
+
+/* Nuke any wrapper that might be adding the square border */
+#sidebar .profile-wrapper a {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* === FIX AVATAR SQUARE — target the <a> wrapper === */
+a#avatar,
+a#avatar.rounded-circle {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+  display: block;
+  width: fit-content;
+}
