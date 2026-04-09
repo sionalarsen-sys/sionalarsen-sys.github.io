@@ -1,13 +1,25 @@
 ---
 ---
 
-:root {
+/* This ensures the variables apply regardless of system settings */
+:root,
+[data-mode='dark'] {
   --main-wrapper-bg: #120b1a;
   --main-bg: #120b1a;
   --text-color: #d1d1d1;
   --heading-color: #ff71ce;
   --link-color: #01cdfe;
   --sidebar-bg: #10061a;
+  --card-bg: #1a1025;
 }
 
 @import 'main';
+
+/* SURGICAL LAYOUT FIXES (Add these back one by one) */
+.profile-wrapper img {
+  border-radius: 50% !important;
+}
+
+#sidebar .site-title {
+  white-space: normal !important;
+}
