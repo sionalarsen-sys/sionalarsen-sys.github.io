@@ -3,40 +3,166 @@
 
 @import 'main';
 
-/* 1. THE VAPORWAVE PURGE */
+/* ============================================
+   VAPORWAVE THEME — A Work In Progress
+   ============================================ */
+
+/* Target all dark mode cases Chirpy uses */
 html,
-:root,
-html[data-mode='dark'] {
-  /* This variable is the one that usually stays grey in the sidebar */
-  --sidebar-bg: #10061a !important;
-
-  /* This one controls the main content area background */
+html[data-mode='dark'],
+html:not([data-mode]) {
+  --body-bg: #120b1a !important;
   --main-bg: #120b1a !important;
-  --main-wrapper-bg: #120b1a !important;
+  --sidebar-bg: #10061a !important;
+  --topbar-wrapper-bg: #120b1a !important;
+  --main-border-color: #2a1a3a !important;
 
-  /* This fixes the grey boxes behind your posts */
-  --card-bg: #1a1025 !important;
+  --text-color: #e8e0f0;
+  --text-muted-color: #9d6fb5;
+  --heading-color: #ff71ce;
+  --label-color: #01cdfe;
 
-  /* This fixes the grey border lines */
-  --main-border-color: #2d1b4d !important;
+  --link-color: #ff71ce;
+  --link-underline-color: #4a1a5a;
 
-  /* Neon Accents */
-  --heading-color: #ff71ce !important;
-  --link-color: #01cdfe !important;
-  --text-color: #d1d1d1 !important;
+  --sidebar-muted-color: #7a4a8a;
+  --sidebar-active-color: #ff71ce;
+  --nav-cursor-color: #01cdfe;
+  --sidebar-btn-bg: #1a1025;
+
+  --topbar-text-color: #d8b4fe;
+  --search-wrapper-bg: rgba(26, 16, 37, 0.8);
+  --search-wrapper-border-color: #2a1a3a;
+  --search-tag-bg: #1a1025;
+  --search-icon-color: #9d6fb5;
+  --input-focus-border-color: #ff71ce;
+
+  --tag-bg: rgba(255, 113, 206, 0.1);
+  --tag-border: #4a1a5a;
+  --tag-shadow: #2a1a3a;
+  --tag-hover: rgba(255, 113, 206, 0.2);
+
+  --card-border-color: #2a1a3a;
+  --card-box-shadow: rgba(255, 113, 206, 0.05);
+  --post-list-text-color: #c9c0d8;
+  --relate-post-date: rgba(216, 180, 254, 0.5);
+  --dash-color: #4a1a5a;
+
+  --button-bg: #1a1025;
+  --btn-border-color: #2a1a3a;
+  --btn-backtotop-color: #01cdfe;
+  --btn-backtotop-border-color: #2a1a3a;
+  --btn-box-shadow: rgba(1, 205, 254, 0.1);
+  --btn-patinator-text-color: #d8b4fe;
+  --btn-paginator-hover-color: #1a1025;
+  --btn-paginator-border-color: #2a1a3a;
+  --btn-text-color: #d8b4fe;
+
+  --blockquote-border-color: #ff71ce;
+  --blockquote-text-color: #c084fc;
+
+  --tb-odd-bg: #160e21;
+  --tb-border-color: #2a1a3a;
+
+  --timeline-color: rgba(255, 113, 206, 0.15);
+  --timeline-node-bg: #ff71ce;
+  --timeline-year-dot-color: #120b1a;
+
+  --pin-bg: #1a1025;
+  --pin-color: #9d6fb5;
+  --checkbox-color: #4a1a5a;
+  --checkbox-checked-color: #ff71ce;
+  --mask-bg: #2a1a3a;
+
+  --prompt-text-color: #d8b4fe;
+  --prompt-tip-bg: rgba(1, 205, 254, 0.1);
+  --prompt-tip-icon-color: #01cdfe;
+  --prompt-info-bg: rgba(255, 113, 206, 0.1);
+  --prompt-info-icon-color: #ff71ce;
+  --prompt-warning-bg: rgba(255, 200, 100, 0.1);
+  --prompt-warning-icon-color: #ffc864;
+  --prompt-danger-bg: rgba(255, 80, 100, 0.1);
+  --prompt-danger-icon-color: #ff5064;
 }
 
-/* 2. THE DOT & ALIGNMENT FIXES */
-/* We keep these here to ensure the sidebar stays clean */
-#sidebar ul.nav {
-  list-style: none !important;
+/* Also cover the system-prefers-dark case */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) {
+    --body-bg: #120b1a !important;
+    --main-bg: #120b1a !important;
+    --sidebar-bg: #10061a !important;
+    --topbar-wrapper-bg: #120b1a !important;
+  }
 }
 
-#sidebar ul.nav li::marker {
-  content: none !important;
+/* === BACKGROUND ENFORCEMENT ===
+   CSS vars alone sometimes don't reach these — belt and suspenders */
+body {
+  background-color: #120b1a !important;
 }
 
-#sidebar .site-title {
-  text-align: left !important;
-  display: block !important;
+#main-wrapper,
+.main-wrapper {
+  background-color: #120b1a !important;
+}
+
+#sidebar,
+#sidebar .sidebar-inner {
+  background-color: #10061a !important;
+}
+
+/* === SITE TITLE — this is the grey one in screenshot 2 === */
+#sidebar .site-title a,
+#sidebar .site-title,
+.site-title a {
+  color: #ff71ce !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 8px rgba(255, 113, 206, 0.4);
+}
+
+#sidebar .site-subtitle,
+.site-subtitle {
+  color: #01cdfe !important;
+  opacity: 1 !important;
+}
+
+/* === NAV ITEMS === */
+#sidebar .nav-item a,
+#sidebar .nav-item .nav-link {
+  color: #01cdfe !important;
+}
+
+#sidebar .nav-item i,
+#sidebar .nav-item svg {
+  color: #01cdfe !important;
+}
+
+#sidebar .nav-item.active a,
+#sidebar .nav-item.active i,
+#sidebar .nav-item.active .nav-link {
+  color: #ff71ce !important;
+}
+
+/* === PROFILE IMAGE === */
+.profile-wrapper img,
+#avatar img,
+#sidebar .profile-wrapper img {
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* === POST TITLES on home feed === */
+.post-preview .post-title {
+  color: #ff71ce;
+}
+
+/* === SOCIAL ICONS (bottom of sidebar) === */
+.sidebar-bottom a,
+.sidebar-bottom i {
+  color: #9d6fb5 !important;
+  &:hover {
+    color: #ff71ce !important;
+  }
 }
