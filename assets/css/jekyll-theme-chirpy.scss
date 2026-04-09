@@ -1,103 +1,13 @@
 ---
 ---
 
-/* 1. Force the Vaporwave Variables into the Root */
 :root {
-  --main-wrapper-bg: #120b1a !important; /* Deep Cyberpunk Purple */
-  --text-color: #e0def4 !important; /* High-vis white */
-  --heading-color: #ffabab !important; /* Neon Pink */
-  --link-color: #01cdfe !important; /* Electric Cyan */
-  --sidebar-bg: #10061a !important; /* Deep depth */
-  --nav-item-hover-bg: #4a306d !important; /* Purple haze */
-  --nav-item-active-color: #05ffa1 !important; /* Neon Mint */
-  --text-muted-color: #908caa !important; /* For dates and less important text */
-
-  /* The Missing Pieces for Sidebar & Title */
-  --site-title-color: #00ffff !important; /* Makes "A Work in progress" Cyan */
-  --site-subtitle-color: #b967ff !important; /* Makes the tagline Purple */
-  --sidebar-muted-color: #05ffa1 !important; /* Makes the Nav text Neon Mint */
-  --nav-item-hover-bg: #4a306d !important;
-
-  /* The Background "Nuclear Option" */
-  --main-bg: #120b1a !important; /* The main background behind text */
-  --board-bg: #1a1025 !important; /* The card/board background */
-  --card-bg: #241b2f !important; /* Optional: slightly lighter for subtle cards */
-  --timeline-color: #b967ff !important; /* Purple vertical line in archives */
-  --hr-border-color: #4a306d !important; /* Subtle purple separators */
-
-  /* The "Atmospheric" Details */
-  --main-border-color: #4a306d !important; /* A subtle purple divider line */
-  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important; /* Darker, cleaner shadows */
-
-  /* Make the code blocks match the vibe */
-  --code-bg: #1a1025 !important;
-  --code-header-bg: #241b2f !important;
+  --main-wrapper-bg: #120b1a;
+  --main-bg: #120b1a;
+  --text-color: #d1d1d1;
+  --heading-color: #ff71ce;
+  --link-color: #01cdfe;
+  --sidebar-bg: #10061a;
 }
 
-/* 2. Target Dark Mode specifically if the system overrides the root */
-[data-mode='dark'] {
-  --main-wrapper-bg: #120b1a !important;
-  --text-color: #e0def4 !important;
-  --heading-color: #ffabab !important;
-  --link-color: #01cdfe !important;
-
-  /* Duplicate here for safety */
-  --site-title-color: #00ffff !important;
-  --sidebar-muted-color: #05ffa1 !important;
-
-  --main-bg: #120b1a !important;
-  --board-bg: #1a1025 !important;
-}
-
-/* 3. Load the actual theme engine */
 @import 'main';
-
-/* 1. Hide dots while keeping items aligned */
-#sidebar ul.nav {
-  list-style: none !important;
-  padding-left: 0 !important;
-}
-#sidebar ul.nav li::marker {
-  content: none !important;
-}
-
-/* 2. Fix the Title Wrapping & Centering */
-#sidebar #profile-wrapper {
-  text-align: center !important;
-  width: 100% !important;
-}
-
-#sidebar #profile-wrapper .site-title a {
-  white-space: normal !important; /* Forces the text to wrap */
-  display: block !important;
-  font-size: 1.5rem !important;
-  line-height: 1.2 !important;
-}
-
-/* 3. Social Icons & Footer Fix */
-/* This prevents the icons from flipping or stretching */
-.sidebar-bottom {
-  display: flex !important;
-  flex-direction: row !important; /* Force icons to sit side-by-side */
-  justify-content: center !important;
-  padding: 1rem 0 !important;
-}
-
-.sidebar-bottom a {
-  margin: 0 0.5rem !important;
-}
-
-/* 4. Search Bar Alignment */
-#search-wrapper {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
-  margin-bottom: 1rem !important;
-}
-
-#search-input {
-  width: 85% !important; /* Prevents it from being 'squashed' */
-  background-color: #241b2f !important;
-  border-radius: 20px !important;
-  border: 1px solid #4a306d !important;
-}
