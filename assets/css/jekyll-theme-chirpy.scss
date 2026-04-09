@@ -176,3 +176,27 @@ img.rounded-circle,
     color: #ff71ce !important;
   }
 }
+
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+html {
+  --font-heading: 'Exo 2', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.site-title a,
+.post-preview .post-title {
+  font-family: var(--font-heading) !important;
+}
