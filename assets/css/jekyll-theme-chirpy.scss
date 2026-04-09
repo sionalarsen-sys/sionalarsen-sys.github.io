@@ -52,45 +52,52 @@
 /* 3. Load the actual theme engine */
 @import 'main';
 
-/* 1. Hide dots without breaking flex alignment */
+/* 1. Hide dots while keeping items aligned */
 #sidebar ul.nav {
   list-style: none !important;
+  padding-left: 0 !important;
 }
 #sidebar ul.nav li::marker {
   content: none !important;
 }
 
-/* 2. Fix the Title Wrapping */
-#sidebar #profile-wrapper .site-title {
-  white-space: normal !important; /* Allows title to wrap to next line */
-  line-height: 1.2 !important;
+/* 2. Fix the Title Wrapping & Centering */
+#sidebar #profile-wrapper {
   text-align: center !important;
+  width: 100% !important;
 }
 
-/* 3. Fix the Avatar Circle */
-#avatar {
-  border-radius: 50% !important; /* Forces the circle shape back */
-  overflow: hidden !important;
+#sidebar #profile-wrapper .site-title a {
+  white-space: normal !important; /* Forces the text to wrap */
+  display: block !important;
+  font-size: 1.5rem !important;
+  line-height: 1.2 !important;
 }
 
-/* 4. Fix the Search Bar Squash */
+/* 3. Social Icons & Footer Fix */
+/* This prevents the icons from flipping or stretching */
+.sidebar-bottom {
+  display: flex !important;
+  flex-direction: row !important; /* Force icons to sit side-by-side */
+  justify-content: center !important;
+  padding: 1rem 0 !important;
+}
+
+.sidebar-bottom a {
+  margin: 0 0.5rem !important;
+}
+
+/* 4. Search Bar Alignment */
 #search-wrapper {
-  width: 90% !important; /* Give it space to breathe */
-  margin: 10px auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
 }
+
 #search-input {
+  width: 85% !important; /* Prevents it from being 'squashed' */
   background-color: #241b2f !important;
+  border-radius: 20px !important;
   border: 1px solid #4a306d !important;
-  color: var(--text-color) !important;
-}
-
-/* 5. Fix the Icon Flip & Alignment */
-/* We remove the 'display: flex !important' we added earlier,
-   as it was likely overriding the theme's natural orientation. */
-.nav-item {
-  display: list-item !important; /* Reset to theme default */
-}
-
-#main-wrapper {
-  padding-left: 1rem !important; /* Adds a small buffer for the content */
 }
