@@ -52,24 +52,45 @@
 /* 3. Load the actual theme engine */
 @import 'main';
 
-/* 2. THE THEME ENGINE */
-@import 'main';
-
-/* 3. SURGICAL FIXES (Layout) */
+/* 1. Hide dots without breaking flex alignment */
 #sidebar ul.nav {
   list-style: none !important;
 }
-
 #sidebar ul.nav li::marker {
   content: none !important;
 }
 
-#sidebar .nav-item {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+/* 2. Fix the Title Wrapping */
+#sidebar #profile-wrapper .site-title {
+  white-space: normal !important; /* Allows title to wrap to next line */
+  line-height: 1.2 !important;
+  text-align: center !important;
 }
 
+/* 3. Fix the Avatar Circle */
+#avatar {
+  border-radius: 50% !important; /* Forces the circle shape back */
+  overflow: hidden !important;
+}
+
+/* 4. Fix the Search Bar Squash */
+#search-wrapper {
+  width: 90% !important; /* Give it space to breathe */
+  margin: 10px auto !important;
+}
 #search-input {
   background-color: #241b2f !important;
   border: 1px solid #4a306d !important;
+  color: var(--text-color) !important;
+}
+
+/* 5. Fix the Icon Flip & Alignment */
+/* We remove the 'display: flex !important' we added earlier,
+   as it was likely overriding the theme's natural orientation. */
+.nav-item {
+  display: list-item !important; /* Reset to theme default */
+}
+
+#main-wrapper {
+  padding-left: 1rem !important; /* Adds a small buffer for the content */
 }
