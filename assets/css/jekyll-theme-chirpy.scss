@@ -1,48 +1,42 @@
 ---
 ---
 
-/* 1. VAPORWAVE POWER-OVERRIDE */
-html,
-html[data-mode='dark'] {
-  /* Main Surfaces */
-  --main-wrapper-bg: #120b1a !important;
-  --main-bg: #120b1a !important;
-  --sidebar-bg: #10061a !important;
-  --card-bg: #1a1025 !important; /* This fixes the grey post cards */
-
-  /* Text & Accents */
-  --text-color: #d1d1d1 !important;
-  --heading-color: #ff71ce !important;
-  --link-color: #01cdfe !important;
-
-  /* The "Anti-Grey" Variables */
-  --main-border-color: #2d1b4d !important; /* Replaces grey borders with deep purple */
-  --text-muted-color: #a0a0a0 !important; /* Brightens up the grey subtext */
-  --blockquote-border-color: #ff71ce !important;
-  --nav-item-hover-color: #ff71ce !important;
-  --sidebar-active-color: #ff71ce !important;
-}
-
-/* 2. THE THEME */
 @import 'main';
 
-/* 3. LAYOUT OVERRIDES (Keep these at the bottom!) */
-.profile-wrapper img {
-  border-radius: 50% !important;
+/* 1. THE VAPORWAVE PURGE */
+html,
+:root,
+html[data-mode='dark'] {
+  /* This variable is the one that usually stays grey in the sidebar */
+  --sidebar-bg: #10061a !important;
+
+  /* This one controls the main content area background */
+  --main-bg: #120b1a !important;
+  --main-wrapper-bg: #120b1a !important;
+
+  /* This fixes the grey boxes behind your posts */
+  --card-bg: #1a1025 !important;
+
+  /* This fixes the grey border lines */
+  --main-border-color: #2d1b4d !important;
+
+  /* Neon Accents */
+  --heading-color: #ff71ce !important;
+  --link-color: #01cdfe !important;
+  --text-color: #d1d1d1 !important;
 }
 
-#sidebar .site-title {
-  white-space: normal !important;
-  display: block !important;
-  text-align: left !important;
-  line-height: 1.2 !important;
-}
-
-/* Ensure the sidebar dots stay gone */
+/* 2. THE DOT & ALIGNMENT FIXES */
+/* We keep these here to ensure the sidebar stays clean */
 #sidebar ul.nav {
   list-style: none !important;
 }
 
 #sidebar ul.nav li::marker {
   content: none !important;
+}
+
+#sidebar .site-title {
+  text-align: left !important;
+  display: block !important;
 }
