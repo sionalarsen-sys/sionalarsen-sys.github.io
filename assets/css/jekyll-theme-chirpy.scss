@@ -7,7 +7,6 @@
    VAPORWAVE THEME — A Work In Progress
    ============================================ */
 
-/* Target all dark mode cases Chirpy uses */
 html,
 html[data-mode='dark'],
 html:not([data-mode]) {
@@ -85,7 +84,6 @@ html:not([data-mode]) {
   --prompt-danger-icon-color: #ff5064;
 }
 
-/* Also cover the system-prefers-dark case */
 @media (prefers-color-scheme: dark) {
   html:not([data-mode]) {
     --body-bg: #120b1a !important;
@@ -95,8 +93,7 @@ html:not([data-mode]) {
   }
 }
 
-/* === BACKGROUND ENFORCEMENT ===
-   CSS vars alone sometimes don't reach these — belt and suspenders */
+/* === BACKGROUND ENFORCEMENT === */
 body {
   background-color: #120b1a !important;
 }
@@ -111,7 +108,7 @@ body {
   background-color: #10061a !important;
 }
 
-/* === SITE TITLE — this is the grey one in screenshot 2 === */
+/* === SITE TITLE === */
 #sidebar .site-title a,
 #sidebar .site-title,
 .site-title a {
@@ -126,7 +123,7 @@ body {
   opacity: 1 !important;
 }
 
-/* === NAV ITEMS === */
+/* === NAV ITEMS (color only) === */
 #sidebar .nav-item a,
 #sidebar .nav-item .nav-link {
   color: #01cdfe !important;
@@ -143,81 +140,34 @@ body {
   color: #ff71ce !important;
 }
 
-/* === PROFILE IMAGE === */
-.profile-wrapper img,
-#avatar img,
-#sidebar .profile-wrapper img {
-  border-radius: 50% !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-/* === POST TITLES on home feed === */
-.post-preview .post-title {
-  color: #ff71ce;
-}
-
-/* === SOCIAL ICONS (bottom of sidebar) === */
-.sidebar-bottom a,
-.sidebar-bottom i {
-  color: #9d6fb5 !important;
-  &:hover {
-    color: #ff71ce !important;
-  }
-}
-/* === FIX NAV BULLETS === */
-#sidebar ul,
-#sidebar ul.nav,
-#sidebar li,
-#sidebar li.nav-item {
-  list-style: none !important;
-  list-style-type: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-#sidebar li::before,
-#sidebar li::marker {
-  display: none !important;
-  content: none !important;
-}
-
-/* === FIX AVATAR SQUARE === */
-#sidebar .profile-wrapper,
-#sidebar .profile-wrapper a,
-.profile-wrapper {
-  display: block;
-  text-align: left;
-}
-
-#sidebar img.rounded-circle,
-#sidebar .profile-wrapper img,
-.profile-wrapper img,
-img.rounded-circle {
-  border-radius: 50% !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  /* Chirpy sometimes uses these too: */
-  -webkit-border-radius: 50% !important;
-  clip-path: none !important;
-}
-
-/* Nuke any wrapper that might be adding the square border */
-#sidebar .profile-wrapper a {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* === FIX AVATAR SQUARE — target the <a> wrapper === */
+/* === AVATAR (color/shape only, no layout changes) === */
 a#avatar,
 a#avatar.rounded-circle {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   border-radius: 50% !important;
-  display: block;
-  width: fit-content;
+}
+
+#sidebar .profile-wrapper img,
+img.rounded-circle,
+.profile-wrapper img {
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* === POST TITLES === */
+.post-preview .post-title {
+  color: #ff71ce;
+}
+
+/* === SOCIAL ICONS === */
+.sidebar-bottom a,
+.sidebar-bottom i {
+  color: #9d6fb5 !important;
+  &:hover {
+    color: #ff71ce !important;
+  }
 }
