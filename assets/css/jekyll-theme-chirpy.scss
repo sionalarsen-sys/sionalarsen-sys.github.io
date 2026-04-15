@@ -177,6 +177,73 @@ img.rounded-circle,
   }
 }
 
+/* === CODE BLOCKS === */
+.highlight {
+  background-color: #0d0714 !important;
+  border: 2px solid #9d6fb5 !important;
+  border-radius: 8px !important;
+  box-shadow: 4px 4px 0px #2a1a3a !important;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background-color: #1a1025 !important;
+  color: #eb6de4 !important;
+  border-radius: 4px !important;
+  border: 1px solid #2a1a3a !important;
+}
+
+/* Code block header bar */
+div.code-header {
+  background-color: #2a1a3a !important;
+  border-bottom: 1px solid #4a1a5a !important;
+  border-radius: 6px 6px 0 0 !important;
+}
+
+/* Scrollbar */
+.highlight::-webkit-scrollbar {
+  height: 6px !important;
+}
+
+.highlight::-webkit-scrollbar-track {
+  background: #0d0714 !important;
+  border-radius: 0 0 6px 6px !important;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+  background: #4a1a5a !important;
+  border-radius: 3px !important;
+}
+
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: #ff71ce !important;
+}
+
+/* Language label icon */
+div.code-header span[data-label-text] i {
+  color: #9d6fb5 !important;
+}
+
+div.code-header span[data-label-text]::after {
+  color: #9d6fb5 !important;
+}
+
+/* Copy button icon */
+div.code-header button[aria-label='copy'] i {
+  color: #9d6fb5 !important;
+}
+
+div.code-header button[aria-label='copy']:hover i {
+  color: #ff71ce !important;
+}
+
+div.code-header::before {
+  --code-header-muted-color: #f1821a !important;
+  box-shadow:
+    1.25rem 0 0 #ff71ce,
+    2.5rem 0 0 #01cdfe !important;
+}
+
 /* === FONTS === */
 html {
   --font-heading: 'Exo 2', sans-serif;
