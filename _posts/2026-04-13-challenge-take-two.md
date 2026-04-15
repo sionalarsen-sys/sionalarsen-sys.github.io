@@ -93,7 +93,8 @@ Create `assets/css/jekyll-theme-chirpy.scss`. Use `mkdir` or use Visual Studio g
 
 Insert this at the top of your file:
 
-```
+{% raw %}
+```bash
 ---
 ---
 
@@ -104,6 +105,7 @@ Insert this at the top of your file:
 {%- endif -%}
 ';
 ```
+{% endraw %}
 
 You're welcome. 
 
