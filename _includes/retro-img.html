@@ -1,0 +1,7 @@
+<div class="retro-frame">
+  <div class="retro-frame-header">
+    <span class="retro-frame-dots"></span>
+    <span class="retro-frame-title">{{ include.title | default: 'image' }}</span>
+  </div>
+  <img src="{{ include.src }}" alt="{{ include.alt | default: '' }}">
+</div>

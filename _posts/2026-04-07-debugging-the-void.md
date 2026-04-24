@@ -4,6 +4,7 @@ title: "Yes, I Do Like a Challenge"
 date: 2026-04-07 12:00:00 -0700
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, linux]
+author: Siona
 ---
 
 "Remember that visual novel, how it was such a good concept, but the writing was kind of terrible?" my roommate asked one day.

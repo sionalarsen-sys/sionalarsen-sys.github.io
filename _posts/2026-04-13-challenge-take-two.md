@@ -4,6 +4,7 @@ title: "Challenge Take Two - Electric Boogaloo"
 date: 2026-04-13 12:00:00 -0700
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, linux, tutor, learn, document]
+author: Siona
 ---
 
 Since about High School, I've tried to live by a core principle: don't learn the subject, learn how to learn the subject.

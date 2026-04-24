@@ -4,6 +4,7 @@ title: Never Straightforward - Building a LInux Server
 date: 2026-04-18
 categories: [Linux, troubleshooting]
 tags: [Linux, home lab, macmini, Ubuntu, troubleshooting]
+author: Siona
 ---
 
 I've had a terrible week. I took two sick days, one of them in urgent care, and feeling like I'm constantly behind on my schoolwork. I'm not, not really, but not doing anything for two days and then trying to cram a bunch in on Friday was wearing me out. 
@@ -131,7 +132,7 @@ journalctl -k | grep -i brcmfmac
 
 This apparently tells us that the driver is looking for Apple-specific firmware that aren't included. I told you that it would be Apple that would bite me in the ass specifically!
 
-Claude points me to a project called apple-firmware that should solve this problem. At this point I probably should I have double checked where it was pointing me to but I'm at hour three and feeling dejected. I'm just copy and pasting back and forth between my terminal and Claude without any commentary. Just more and more bad luck. When do I get a break?
+Claude points me to a project called apple-firmware that should solve this problem. At this point I probably should have double checked where it was pointing me to but I'm at hour three and feeling dejected. I'm just copy and pasting back and forth between my terminal and Claude without any commentary. Just more and more bad luck. When do I get a break?
 
 ![Phone picture of the monitor showing a terminal command looking for the network card and it showing it did recognize Broadcom](/assets/img/posts/earlyterminal.jpg)
 
@@ -158,7 +159,7 @@ That's right! Wifi!!!
 
 ***
 
-![Phone photo of monitor showing that wifi was enabled and downloading was actively happening on the terminal](/assets/img/posts/wifiterminal.jpg)]
+![Phone photo of monitor showing that wifi was enabled and downloading was actively happening on the terminal](/assets/img/posts/wifiterminal.jpg)
 
 All the bad feelings from the last hour slog immediately evaporated. I was back to cheering, back to having a good time. Of course still very aware that nothing ever goes as straightforward as advertised apparently. I had Claude write up an overview of what happened, what we looked for and why, and the solution that was reached. Even if it doesn't make a lot of sense to me right now, having that for my records felt necessary.
 
