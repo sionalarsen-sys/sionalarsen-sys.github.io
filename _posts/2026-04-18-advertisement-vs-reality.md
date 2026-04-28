@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Never Straightforward - Building a LInux Server
+title: Never Straightforward - Building a Linux Server
+description: "Or how I'm cursed by Apple to get the weirdest errors. My one hour fun break to install Linux to start my at home server turned into four hours of fixing breaking things."
 date: 2026-04-18
 categories: [Linux, troubleshooting]
 tags: [Linux, home lab, macmini, Ubuntu, troubleshooting]
@@ -27,7 +28,7 @@ I should know better by now.
 
 ---
 
-![Phone picture of macmini and monitor showing user settings free of security users](/assets/img/posts/macminibefore.jpg)
+{% include browser-img.html src="/assets/img/posts/macminibefore.jpg" alt="Phone picture of macmini and monitor showing user settings free of security users" %}
 
 Apple products and I have a contentious relationship. My first experience was in 2000 as my school district primarily used Macs and we had a computer day to learn them. I was already pretty experienced with Windows - a very early memory is of my dad typing his Thesis on our desktop and deciding one day I was going to be that fast of a typer - and in those days that was actually a detriment.
 
@@ -49,7 +50,7 @@ I followed through all the instructions necessary to allow the Mac to boot from 
 
 And it put me in recovery mode. It asks me to choose a startup disk and all I've got is the Mac internal drive. I double check that the security options are correct, unplug the drive, power down the mac, plug in the drive again and try again.
 
-![Phone picture of screen only showing Mac as a bootable drive for startup](/assets/img/posts/macstartupdisk.jpg)
+{% include browser-img.html src="/assets/img/posts/macstartupdisksmall.jpg" alt="Phone picture of screen only showing Mac as a bootable drive for startup" w="700" h="400" %}
 
 Okay, seems to be the thumb drive. Back to the drawing board.
 
@@ -67,11 +68,11 @@ My Mac Mini simply can't read MBR and I'm pretty sure that's what Balena did aut
 
 I'm holding my breath as I boot the mini up again. Even as I get the GRUB screen with the option to "Try or Install Ubuntu" I'm still holding my breath. I barely want to touch anything or move as the loading symbol circles and circles for about five minutes.
 
-![Phone photo of the GRUB screen with Try or Install Ubuntu highlighted](/assets/img/posts/grubstartup.jpg)
+{% include browser-img.html src="/assets/img/posts/grubstartup.jpg" alt="Phone photo of the GRUB screen with Try or Install Ubuntu highlighted" %}
 
 But eventually I'm cheering as the installer launches and I'm working out the settings to clear out the Mac and replace it with Linux. I spend quite a bit of time brainstorming ideas of what to call my server because I like to be fun and referential and creative and unique. 
 
-![Phone photo of the Ubuntu desktop and Preparing Ubuntu installation set up window loading](/assets/img/posts/preparingubuntu.jpg)
+{% include browser-img.html src="/assets/img/posts/preparingubuntu.jpg" alt="Phone photo of the Ubuntu desktop and Preparing Ubuntu installation set up window loading" %}
 
 Finally, I can step away and let it do it's thing. Two hours was a long time to work on this problem.
 
@@ -85,7 +86,7 @@ I want to scream.
 
 I don't have an ethernet cable so I use USB tethering from my phone to get the mini hooked up to the internet. I had to switch cables because the first one was apparently charging only but thankfully the second could send data too.
 
-![Phone picture of the monitor screen showing internet options that include ethernet but not wifi](/assets/img/posts/nowifi.jpg)
+{% include browser-img.html src="/assets/img/posts/nowifismall.jpg" alt="Phone picture of the monitor screen showing internet options that include ethernet but not wifi" %}
 
 At this point I'm leaning on Claude AI quite a bit because this isn't in the tutorials. So let me try to walk through what we did to get internet on my Linux Macmini Server. Because spoilers... I did do it.
 
@@ -134,7 +135,7 @@ This apparently tells us that the driver is looking for Apple-specific firmware 
 
 Claude points me to a project called apple-firmware that should solve this problem. At this point I probably should have double checked where it was pointing me to but I'm at hour three and feeling dejected. I'm just copy and pasting back and forth between my terminal and Claude without any commentary. Just more and more bad luck. When do I get a break?
 
-![Phone picture of the monitor showing a terminal command looking for the network card and it showing it did recognize Broadcom](/assets/img/posts/earlyterminal.jpg)
+{% include browser-img.html src="/assets/img/posts/earlyterminal.jpg" alt="Phone picture of the monitor showing a terminal command looking for the network card and it showing it did recognize Broadcom" %}
 
 ```bash
 sudo apt-get install git
@@ -159,7 +160,7 @@ That's right! Wifi!!!
 
 ***
 
-![Phone photo of monitor showing that wifi was enabled and downloading was actively happening on the terminal](/assets/img/posts/wifiterminal.jpg)
+{% include browser-img.html src="/assets/img/posts/wifiterminal.jpg" alt="Phone photo of monitor showing that wifi was enabled and downloading was actively happening on the terminal" %}
 
 All the bad feelings from the last hour slog immediately evaporated. I was back to cheering, back to having a good time. Of course still very aware that nothing ever goes as straightforward as advertised apparently. I had Claude write up an overview of what happened, what we looked for and why, and the solution that was reached. Even if it doesn't make a lot of sense to me right now, having that for my records felt necessary.
 

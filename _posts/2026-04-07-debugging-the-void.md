@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Yes, I Do Like a Challenge"
+description: "A reflection on a mid-life career change to tech as a complete newbie, and the frankly hilarious case of user error as I get my tech blog journey going"
 date: 2026-04-07 12:00:00 -0700
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, linux]

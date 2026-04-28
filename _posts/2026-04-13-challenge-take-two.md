@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Challenge Take Two - Electric Boogaloo"
+description: "The continuation of \"Yes, I Like A Challenge\" - Troubleshooting scss style sheets for a Gem based blog and reflecting on how to learn to learn"
 date: 2026-04-13 12:00:00 -0700
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, linux, tutor, learn, document]
@@ -39,11 +40,11 @@ Okay, a bit of back and forth and we determine we need to make sure we specify t
 
 It was broken. 
 
-![screenshot of a portion of the chirpy site with purple background and mint green text colors but new white dots, skewed text, and icons arranged vertically](/assets/img/posts/brokensite1.png)
+{% include browser-img.html src="/assets/img/posts/brokensite1.png" alt="screenshot of a portion of the chirpy site with purple background and mint green text colors but new white dots, skewed text, and icons arranged vertically" %}
 
 Things had been completely shifted around on the page, the clean structure completely scrambled. The colors had worked but it wouldn't do if my technical blog looked broken.
 
-![screenshot of a portion of the chirpy site with purple background and pink text but the searchbar aligned left and most of the main panel acting as the link to the blog post](/assets/img/posts/brokensite2.png)
+{% include browser-img.html src="/assets/img/posts/brokensite2.png" alt="screenshot of a portion of the chirpy site with purple background and pink text but the searchbar aligned left and most of the main panel acting as the link to the blog post" %}
 
 ***
 

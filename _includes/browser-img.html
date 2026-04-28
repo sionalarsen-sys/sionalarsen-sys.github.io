@@ -3,5 +3,14 @@
     <span class="browser-frame-dots"></span>
     <span class="browser-frame-url">a-work-in-progress.dev</span>
   </div>
-  <img src="{{ include.src }}" alt="{{ include.alt | default: '' }}">
+  <img
+    src="{{ include.src }}"
+    alt="{{ include.alt | default: '' }}"
+    {% if include.w %}
+      width="{{ include.w }}"
+    {% endif %}
+    {% if include.h %}
+      height="{{ include.h }}"
+    {% endif %}
+  >
 </div>
