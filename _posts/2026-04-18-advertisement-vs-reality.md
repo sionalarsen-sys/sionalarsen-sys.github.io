@@ -2,7 +2,7 @@
 layout: post
 title: Never Straightforward - Building a Linux Server
 description: "Or how I'm cursed by Apple to get the weirdest errors. My one hour fun break to install Linux to start my at home server turned into four hours of fixing breaking things."
-date: 2026-04-18
+date: 2026-04-18 12:00:00 -0800
 categories: [Linux, troubleshooting]
 tags: [Linux, home lab, macmini, Ubuntu, troubleshooting]
 author: Siona

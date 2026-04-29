@@ -2,7 +2,7 @@
 layout: post
 title: "The Return of the Challenge: Tokyo Drift"
 description: "The end of the \"Challenge\" trilogy of tech difficulties with my blog, ending on the least difficult note of final style changes and how I learned loopback addresses."
-date: 2026-04-23 12:00:00 -0700
+date: 2026-04-23 12:00:00 -0800
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, document, customization, font, gem, goatcounter, giscus, comments]
 author: Siona (and Claude)

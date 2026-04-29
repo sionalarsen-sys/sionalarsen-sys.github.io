@@ -2,7 +2,7 @@
 layout: post
 title: "Challenge Take Two - Electric Boogaloo"
 description: "The continuation of \"Yes, I Like A Challenge\" - Troubleshooting scss style sheets for a Gem based blog and reflecting on how to learn to learn"
-date: 2026-04-13 12:00:00 -0700
+date: 2026-04-13 12:00:00 -0800
 categories: [Blogging, Troubleshooting]
 tags: [github-pages, jekyll, linux, tutor, learn, document]
 author: Siona
