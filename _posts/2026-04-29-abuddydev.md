@@ -15,6 +15,8 @@ author: Siona
 
 *Note: This is a discussion of the original out of the box Abuddy. If you visit the repo, you'll notice there's already a v1.1 - v1.1 holds everything I'll be discussing but some features might be a little different.*
 
+ [My life update also talks about abuddy a little]({% post_url 2026-04-29-abuddypersonal %}) and my [repo](https://github.com/sionalarsen-sys/accountabili-buddy/tree/main) can be found here.
+
 ## What I Wanted
 A timer for studying that reflected my specific goals and schedule. I wanted to ensure I was taking frequent breaks instead of hunching over my computer for hours and actually keep track of my focused study time to better manage my schedule. I also didn't want the output of goals, break activities, and others to be exploitable - once they're set, they're set and the only thing to do is move forward. That way I could be sure my studying time wasn't filled up with hitting "randomize" over and over until I got what I wanted.
 
