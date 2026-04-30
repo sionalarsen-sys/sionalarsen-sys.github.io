@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Personal Log: Bad luck, abuddy, and tutoring ૮(„• ⌔ •„)ა⛑"
+title: "Personal Log: Bad luck, abuddy, and tutoring ૮(„• ⌔ •„)ა💊"
 description: "A personal update on the forces that seem dead set against me getting a cosmic break, developing abuddy, and announcing that I have tutoring hours! "
 date: 2026-04-29 12:00:00 -0800
 categories: [Personal Log, Abuddy]
