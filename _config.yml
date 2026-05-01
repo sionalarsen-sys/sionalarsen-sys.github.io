@@ -45,6 +45,9 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
+plugins:
+  - jekyll-seo-tag
+
 # Site Verification Settings
 webmaster_verifications:
   google: 3h8nPTzbp2dH98ijfV0n4ZqUNaa7iOCvO8_7yr3PsDw
