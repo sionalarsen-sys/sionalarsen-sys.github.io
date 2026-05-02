@@ -48,6 +48,8 @@ social:
 plugins:
   - jekyll-seo-tag
 
+social_preview_image: /assets/img/social-preview.png
+
 # Site Verification Settings
 webmaster_verifications:
   google: 3h8nPTzbp2dH98ijfV0n4ZqUNaa7iOCvO8_7yr3PsDw
