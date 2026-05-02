@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Dev Log: I Made A Little Guy - Abuddy ૮(„• ⌔ •„)ა⛑"
+image:
+  path: /assets/img/posts/4292026/devlogabuddy1.png
+  alt: Purple background with abstract circuitry behind the pink title of the blog post, cyan description, and link to blog site
 description: "Discussing the reasons behind creating a script to motivate studying and stumbling into giving it personality "
 date: 2026-04-29 12:00:00 -0800
 categories: [Dev Log, Abuddy]
