@@ -1,12 +1,16 @@
 ---
 layout: post
-title: ""
-description: ""
-date: 2026-05- 12:00:00 -0800
-categories: []
-tags: []
+title: "WYSWHD (What Young Siona Would Have Done) vs WCSWD (What Current Siona Would Do)"
+image:
+  path: /assets/img/posts/5112026/previewpost.png
+description: "Or how acronyms are driving me bonkers as I grapple with a perceived disparity between past me having a naturally easier time at school and my current frustrations that I'm not learning fast enough or well enough. Feat: the hardware upgrades I made to my PC that even just one month ago I wouldn't have bothered with, proving that I absolutely am learning and improving"
+date: 2026-05-11 12:00:00 -0800
+categories: [School, Network]
+tags: [network, net, net+, network+, comptia, A+, Linux, Linux+, RAM, memory, wireless, upgrade, install]
 author: Siona
 ---
+
+## Prologue
 
 "I suppose if you've been used to moving at light speed, going 100mph in a 30 zone would feel slow."
 
@@ -21,6 +25,8 @@ I am not used to studying. I do not take notes. I learn shortcuts to assignments
 My expectation is always "sure it's going to be hard, but I'm not going to struggle for long." 
 
 ---
+
+## New To Tech Fears
 
 I knew coming into tech that my expectation was going to be challenged tremendously. My whole life had been spent avoiding coding and tech based stuff as much as possible because my learning brain freaked out at it -- I always knew that it would require much more time and attention than I was willing to devote to it when it didn't seem like I had to. I came into my first computer class last quarter with so much trepidation and tried to reassure myself that it was fine to be just "decent" at the subject. The important part was to learn the material on a foundational level for me, not about how the grades reflected my worth.
 
@@ -64,6 +70,8 @@ I need my weekend of intense fractions learning... except for like fifty concept
 
 ---
 
+## Practical Applications
+
 My friend's comment about relative speed came after a productive day of learning IPv4 addresses and finally having binary bit math make sense but without any forward progress on completing assignments. I was excited to have learned but frustrated by my ever expanding to do list. I couldn't afford to give over one whole day to one concept; there aren't enough days in the quarter to do that for every concept.
 
 But I have also had to sit with the comment and my frutrations and complaints and look at them more objectively. 
@@ -72,17 +80,25 @@ When my computer started blue screen of deathing on me a couple of years after b
 
 This month I started playing Marathon with some friends; well, I attempted to play Marathon but the process was frustrated by needing to attempt to sign in 2-5 times every time I booted up the game, having at least one failed to enter a match every time we wanted to load in to a match, and at one point dropping connectivity while in a match. It couldn't be the internet because one of my friends was on the same network. The other friend said he had to move the game from his HDD to SSD for it to load correctly but I had two SSD so it couldn't be that. I redownloaded the game, verified the game files, changed settings so my computer couldn't throttle my wireless card when it was using more power.
 
+{% include browser-img.html src="/assets/img/posts/5112026/ramstatsbefore.png" alt="Screenshot of desktop window showing the original configuration of the RAM in my computer" %}
+
 I turned to other diagnosticing tools and noted that my memory consumption was sitting on boot up at 65-75%. I tried turning off a lot of apps at boot up and it barely changed a thing. Having Chrome open sat me at 85% and Marathon was placing me at 90-95%. That sort of memory usage, considering I was juggling so many things on my computer (gaming, school, VS Studio, Docker, an SSH connection, etc) that amount of memory usage didn't seem sunstainable.
 
 A month ago, I would have looked at purchasing a new computer. This one was five years old, that's been the pretty standard life cycle I've come to expect from computers. Literally, 30 days ago me would have seen this problem and gone "hardware is at fault, replace the hardware" and that would mean the whole damn thing.
 
 ---
 
+### RAM
+
 RAM prices are crazy right now. I had to scour the internet for decent-ish pricing for 2 DIMM4 16gb RAM sticks to double my memory capacity in my computer. But $200 is still a fraction of replacing the whole entire computer for something that would still just have 16gb total of memory. 
+
+{% include browser-img.html src="/assets/img/posts/5112026/rambefore.jpg" alt="Picture of interior of PC tower with the original two RAM sticks installed" %}
 
 I researched the manual for my computer specs on how to open her up and safely get to the motherboard to replace the RAM. It took a little struggling to figure out the correct alignment of the slot and to trust that I wasn't breaking something so I could push down on it hard enough for it to finally lock into place. I had some POST issues where my computer didn't want to recognize the new RAM and because I was on a wireless keyboard, I couldn't get into BIOS until I found a wired keyboard. 
 
 On boot up, memory was at 15%. With Chrome 30%. Booting up a game it went to 42%. Since then, I've reintroduced docker and VS Code which requires WSL to be on in the background so my average usage is sitting at around 60%... with all of those things running simultaneously. I think I've seen it hit 70% a couple of times but that's definitely the max. The immediate change really lifted my mood, especially that day because I'd spent the morning demoralized about my illness. 
+
+{% include browser-img.html src="/assets/img/posts/5112026/ramafter.jpg" alt="Picture of interior of PC tower with the new two RAM sticks installed" %}
 
 This, however, did not fix the Marathon issues. I suspected it wouldn't but seeing the 90% memory usage felt like a decent thing to take care of regardless. It also had the good effect of narrowing down what the problem *could* be.
 
@@ -92,6 +108,10 @@ I had to change my network card.
 
 ---
 
+### Network Card
+
+{% include browser-img.html src="/assets/img/posts/5112026/ittybittycard.jpg" alt="Picture of the before card next to my finger for scales" %}
+
 The Qualcomm QCA9377 wireless card is a budget network card that is notoriously finicky at best and an absolute nightmare if you regularly try to online game and don't understand why you're having issues that nobody else even on the same network is having. The setting change I'd done about the power earlier had helped improve the upload speeds; they went from around 20-30mbps to 40. But I rarely had download speeds over 60 and sometimes even when the speed tests started to show over 60, the site would freeze or I'd run it again and get something a fraction the speed at like 45.
 
 I was aware of my speed limitations but had always thought they were a router limitation that I couldn't do anything about because every place I've had internet with this computer, the router has been controlled by somebody else. 
@@ -100,13 +120,19 @@ But clearly more was going wrong than speed, my network card was dropping packet
 
 For $20 I could not only replace it but upgrade. Better Bluetooth, more reliable connection, and future proofing for 6GHz internet speeds. 
 
+{% include browser-img.html src="/assets/img/posts/5112026/manual.jpg" alt="Screenshot of the specific PC manual detailing how to install the wireless card into the M.2 slot" %}
+
 The physical reality of making that change was a little more involved than a couple of DIMM4 RAM sticks.
 
 See the step after opening up the computer to view the motherboard is "remove the GPU to get to the wireless card."
 
+{% include browser-img.html src="/assets/img/posts/5112026/gpufirststep.jpg" alt="Picture of the interior of the tower PC with the GTX GEFORCE GPU fully installed before being uninstalled" %}
+
 Okay, let's check the instructions for removing the GPU: "simply unclip the PCIe clip and pull it up and out of the slot."
 
 Ah. Sure. Typically, opening that clip is pretty simple. The clip in this case? Directly under the center of the GPU mass with the only available piece of the clips not being designed to be pushed by a finger - the available corners are very, very sharp. It also hadn't been unclipped probably since it was installed over five years ago, so it was pretty married to its position. I was worried about using something to push it that if it slipped and hit sommething else, it would break a piece of the motherboard - the CMOS battery was *right there*.
+
+{% include browser-img.html src="/assets/img/posts/5112026/ittybittyclip.jpg" alt="Close up photo of the PCIe clip under the GPU with a purple arrow pointing at the clip" %}
 
 But all advice said pushing it with an object was the only way they got it open. Eventually, I used the butt end of my screwdriver that had a flat surface rather than rounder so it was less likely to slip and it clicked open. A little careful wiggling and the GPU was free and I could turn my attention to the wireless card. No clips there. Just a screw and some antenna wires. Easy peasy.
 
@@ -124,15 +150,21 @@ I kept trying. Different angles, different positions. I tried screwing down the 
 
 Finally, I unclipped the wires and stretched their full length (carefully) away from the computer to bring it all closer to me, rather than me leaning over to it. After 30 minutes, the first connection snapped into place. I cheered to an empty room.
 
+{% include browser-img.html src="/assets/img/posts/5112026/firstantenna.jpg" alt="Photo of the new wireless card with the white antenna cable successfully connected to the interface" %}
+
 Now I knew it could be done. I had experienced it happening so I knew the signs to look for when it was going right so it was easier to dismiss when it wasn't going right. The next snapped on within five minutes of the first.
 
 I very quickly got the card into the M.2 slot, reinstalled the GPU, did a once over comparison between the interior off the computer and my photos... realized I had forgotten to put something back (this is why we take photos!), got it locked up, plugged in and booted.
+
+{% include browser-img.html src="/assets/img/posts/5112026/wcfinally.jpg" alt="Picture of the new wireless card fully installed, both antennas, the plastic clip and screw in place" %}
 
 ---
 
 Night and day. I went from 37-42 download speeds at 5:30pm when most people are stuck in traffic so network congestion is lower to 87-90 download speeds at 8:30pm when far more people are engaged in Netflix, internet phone calls, YouTube tutorials, TikToks, and more. 
 
 Marathon booted and signed in first try. I closed it and started again. It did it again. I closed it and tried one more time... and yeah, not a fluke. No error messages. No stuttering. No slowdown. Just exactly what is expected of the application with normal use. 
+
+{% include browser-img.html src="/assets/img/posts/5112026/internetspeed.png" alt="Screenshot of speed tests taken throughout the day with three tests showing the before speeds on the old card earlier in the day and two tests in the evening with the new card much faster" %}
 
 I downloaded a patch for Slay the Spire 2 beta and it was even more blink and I'd miss it. The network line on the Steam download page was a mostly flat plateau rather than dipping and disappearing constantly. 
 
@@ -141,6 +173,8 @@ I'd had this problem I'd been living with for the entire life of this computer, 
 Of course I'm not going light speed right now, it's only been one and a half quarters of learning. But god damn, 100mph is still pretty fast especially in a school zone (metaphorically - never ever speed in a school zone literally, sheesh).
 
 ---
+
+## Reflection
 
 Network+ is still kicking my ass and making me cry. I spent yesterday doing another fractions weekend study session just to pass one checkpoint review quiz. I just barely made it under the wire with the needed 80%. There are two sections after it that I should have completed that day because that's the week they were on the schedule for. They now have to live in the new schedule on the new week alongside all the other things on the to do list.
 
@@ -155,11 +189,25 @@ Plus, I need to remind myself that time away from the subject matter and studyin
 I stopped reading my Network+ material when I hit these sentences
 
 ```
-When it is used with the HTTP application, it is referred to as HTTP Secure (HTTPS). TLS can also be used to secure other TCP application protocols, such as DNS, NTP, FTP, POP3/IMAP, SMTP, and LDAP.
+When it is used with the HTTP application, it is referred to as HTTP Secure (HTTPS). 
+TLS can also be used to secure other TCP application protocols, 
+such as DNS, NTP, FTP, POP3/IMAP, SMTP, and LDAP.
 ```
 
 I had to laugh about it. Like certainly I still have the frustration about acronyms that I've always had (I have dyslexia, so NTP and FTP can look the exact same if I'm not careful or I'll get IMAP confused with PAM because they read the same in my brain) but it almost felt like the module purposefully created this sentence to illustrate the exact thing I'd been raging about yesterday. I felt like I had stumbled into a cheeky joke between me and the material.
 
-Especially since, of the top of my head, I'm only unsure on what NTP, FTP, and LDAP are. But the context does help me narrrow it down that I could potentially work them out for a quiz question if I needed to if this was the lead up for it. It also means I feel more confident in what I *do* know well enough to focus on the other material for review and study.
+Especially since, off the top of my head, I'm only unsure on what NTP, FTP, and LDAP are. And all I have to do is go to the next page to learn about them anyways!
 
 So I'm doing okay. I have to remember that.
+
+---
+
+## Epilogue
+
+After writing the majority of this post,  went and worked on some of Network+ using Abuddy to track my progress. The first two sections of the module were the ones I wanted to get done yesterday, but otherwise all of this is what I had on my to do list for today.
+
+{% include browser-img.html src="/assets/img/posts/5112026/net7done.png" alt="Screenshot of my abuddy log showing the completed status of all of the Network+ module 7" %}
+
+I also found this module much easier than any before. Part of that is that I spent so much time yesterday learning Port Numbers and part of it is that some of the concepts were just easier to deal with conceptually. But either way, moral of the story is don't give up. 
+
+Things really can turn around after the hardest part.
